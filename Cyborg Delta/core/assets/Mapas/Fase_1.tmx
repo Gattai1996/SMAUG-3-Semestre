@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="left-up" width="48" height="24" tilewidth="64" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="24">
+ <tileset firstgid="1" name="TileSet_Factory" tilewidth="1" tileheight="1" tilecount="0" columns="0"/>
+ <tileset firstgid="1" name="Acid (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Acid (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="Acid (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Acid (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="BGTile (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="BGTile (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="BGTile (3)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (3).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="BGTile (4)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (4).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="BGTile (5)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (5).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="BGTile (6)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (6).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" name="BGTile (7)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (7).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="10" name="Fence (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Fence (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="11" name="Fence (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Fence (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="12" name="Fence (3)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Fence (3).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="13" name="Spike" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Spike.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="14" name="Tile (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="15" name="Tile (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="16" name="Tile (3)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (3).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="17" name="Tile (4)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (4).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="18" name="Tile (5)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (5).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="19" name="Tile (6)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (6).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="20" name="Tile (7)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (7).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="Tile (8)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (8).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="22" name="Tile (9)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (9).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="23" name="Tile (10)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (10).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="24" name="Tile (11)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (11).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="25" name="Tile (12)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (12).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="26" name="Tile (13)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (13).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="27" name="Tile (14)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (14).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="28" name="Tile (15)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (15).png"/>
+  </tile>
+ </tileset>
+ <layer id="3" name="Camada de Tiles 1" width="48" height="24">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,0,0,0,7,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+6,0,0,0,8,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,0,0,0,7,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+6,0,0,0,8,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+5,0,0,0,7,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+6,0,0,0,8,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0,6,0,0,0,5,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Plataformas_img" width="48" height="24">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,26,0,0,0,26,0,0,0,26,26,0,0,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+26,0,0,0,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,25,0,0,0,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+15,0,0,0,15,0,0,0,15,0,0,0,16,0,0,0,1,0,0,0,1,0,0,0,14,0,0,0,13,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="acid">
+  <object id="5" gid="1" x="1024" y="1536" width="256" height="256"/>
+  <object id="6" gid="1" x="1280" y="1536" width="256" height="256"/>
+ </objectgroup>
+ <objectgroup id="5" name="Plataformas">
+  <object id="7" gid="15" x="0" y="1536" width="256" height="256"/>
+  <object id="8" gid="15" x="256" y="1536" width="256" height="256"/>
+  <object id="9" gid="15" x="512" y="1536" width="256" height="256"/>
+  <object id="10" gid="16" x="768" y="1536" width="256" height="256"/>
+  <object id="11" gid="14" x="1536" y="1536" width="256" height="256"/>
+  <object id="12" gid="25" x="512" y="1152" width="256" height="256"/>
+  <object id="14" gid="26" x="0" y="768" width="256" height="256"/>
+  <object id="15" gid="27" x="256" y="768" width="256" height="256"/>
+  <object id="17" gid="27" x="768" y="1152" width="256" height="256"/>
+  <object id="18" gid="25" x="768" y="512" width="256" height="256"/>
+  <object id="19" gid="26" x="1024" y="512" width="256" height="256"/>
+  <object id="20" gid="26" x="1280" y="512" width="256" height="256"/>
+  <object id="21" gid="26" x="1536" y="512" width="256" height="256"/>
+  <object id="22" gid="26" x="1536" y="512" width="256" height="256"/>
+  <object id="23" gid="27" x="1792" y="512" width="256" height="256"/>
+ </objectgroup>
+</map>
