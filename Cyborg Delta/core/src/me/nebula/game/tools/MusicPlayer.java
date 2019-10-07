@@ -3,7 +3,7 @@ package me.nebula.game.tools;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 
-import me.nebula.game.screens.Menu;
+import me.nebula.game.screens.MainMenu;
 
 
 public class MusicPlayer extends Thread {
@@ -16,25 +16,25 @@ public class MusicPlayer extends Thread {
 	}
 	
 	public void run () {
-		music = Gdx.audio.newMusic(Gdx.files.internal("./msc/menu.ogg"));
-		if (Menu.music_conf == true) {
-			music.setLooping(true);
-			music.setVolume(0.9f);
-			music.play();
-		}
-		while (true) {
-			if (Menu.music_conf == false) {
-				music.pause();
-			}else {
-				music.play();
-			}
-			try {
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-				
+//		music = Gdx.audio.newMusic(Gdx.files.internal("./msc/menu.ogg"));
+//		if (MainMenu.music_conf == true) {
+//			music.setLooping(true);
+//			music.setVolume(0.9f);
+//			music.play();
+//		}
+//		while (true) {
+//			if (MainMenu.music_conf == false) {
+//				music.pause();
+//			}else {
+//				music.play();
+//			}
+//			try {
+//				Thread.sleep(10);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//
 		//sound.dispose();
 	}
 	public void play() {
