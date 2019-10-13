@@ -12,18 +12,20 @@ import com.badlogic.gdx.scenes.scene2d.utils.SpriteDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import me.nebula.game.main.GameMain;
+import me.nebula.game.CyborgDelta;
+//import me.nebula.game.main.GameMain;
 import me.nebula.game.helpers.GameInfo;
 import me.nebula.game.screens.Gameplay;
+import me.nebula.game.screens.Menu;
 
 public class MainMenuButtons {
 
-    private GameMain game;
+    private CyborgDelta game;
     private Stage stage;
     private Viewport gameViewport;
     private ImageButton playButton, quitButton, musicButton;
 
-    public MainMenuButtons(GameMain game) {
+    public MainMenuButtons(CyborgDelta game) {
         this.game = game;
         gameViewport = new FitViewport(GameInfo.WIDTH, GameInfo.HEIGHT,
                  new OrthographicCamera());
@@ -53,6 +55,7 @@ public class MainMenuButtons {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 System.out.println("Botão Jogar clicado");
+                Menu.threa_m1.interrupt();
                 game.setScreen(new Gameplay(game));
             }
         });

@@ -1,40 +1,55 @@
 package me.nebula.game.tools;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.audio.Music;
 
-import me.nebula.game.screens.MainMenu;
+import me.nebula.game.helpers.GameInfo;
+//import me.nebula.game.screens.MainMenu;
 
 
 public class MusicPlayer extends Thread {
 	Music music;
-	boolean music_state;
+	boolean music_mode;
+	String musicFile;
 
-	public MusicPlayer() {
-		//music_state = music_conf;
+	public MusicPlayer(String s) {
+		musicFile = s;
+		music_mode = GameInfo.music_conf;
 
 	}
 	
 	public void run () {
-//		music = Gdx.audio.newMusic(Gdx.files.internal("./msc/menu.ogg"));
-//		if (MainMenu.music_conf == true) {
-//			music.setLooping(true);
-//			music.setVolume(0.9f);
-//			music.play();
-//		}
-//		while (true) {
-//			if (MainMenu.music_conf == false) {
-//				music.pause();
-//			}else {
-//				music.play();
-//			}
-//			try {
-//				Thread.sleep(10);
-//			} catch (InterruptedException e) {
-//				e.printStackTrace();
-//			}
-//		}
-//
+	    //carrega musica conforme a fase
+
+        boolean music_state = true;
+    if (music_mode == true) {
+        music = Gdx.audio.newMusic(Gdx.files.internal(musicFile));
+        music.setLooping(true);
+        music.setVolume(0.9f);
+        music.play();
+        System.out.println("Tocando musica "+musicFile);
+    }
+
+		while (true) {
+			if (Gdx.input.isKeyPressed(Input.Keys.P) && music_state == true) {
+				music.pause();
+				music_state = false;
+				System.out.println("Tocando musica "+music_state);
+			}
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			if (Gdx.input.isKeyPressed(Input.Keys.P) && music_state == false){
+				music.play();
+				music_state = true;
+			}
+
+
+		}
+
 		//sound.dispose();
 	}
 	public void play() {
@@ -42,9 +57,9 @@ public class MusicPlayer extends Thread {
 	}
 	public void pause() {
 		music.pause();
-		//if (Menu.music_conf == false | Menu.start == 1) {
-		//	music.setLooping(false);
-		//	music.pause();
+//		if (GameInfo.music_conf == false | Menu.start == 1) {
+//			music.setLooping(false);
+//			music.pause();
 		}
 
 	

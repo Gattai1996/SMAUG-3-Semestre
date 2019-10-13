@@ -6,25 +6,36 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
+import me.nebula.game.helpers.GameInfo;
 import me.nebula.game.screens.Menu;
 
 
 public class CyborgDelta extends Game {
-	
-	public static final int WIDTH = 800;
-	public static final int HEIGHT = 600;
-	public SpriteBatch batch;
+
+	// Tamanho da tela
+	private static final int WIDTH = GameInfo.WIDTH;
+	private static final int HEIGHT = GameInfo.HEIGHT;
+	private SpriteBatch batch;
 	
 	@Override
 	public void create () {
+		// O create inicia tudo no jogo
 		batch = new SpriteBatch();
-		System.out.println("Jogo iniciado");
-		this.setScreen(new Menu(this));
-	}
+		// Tudo que é desenhado na tela usa o batch. NUNCA criar outro SriteBatch em outra classe, pois acaba com a performace do jogo
+		System.out.println("Jogo iniciado com sucesso");
+		// A tela inicial é o menu
+		setScreen(new Menu(this));
+	} // Fim create
 	
 	@Override
 	public void render () {
+		// É necessário chamar esse método que desenha na tela e atualiza para funcionar em outras screens, como o menu
 		super.render();
-	}
+		} // Fim render
+	public SpriteBatch getBatch() {
+		// Getter do batch
+		return this.batch;
+	} // Fim do getBatch
 }
+
 	
