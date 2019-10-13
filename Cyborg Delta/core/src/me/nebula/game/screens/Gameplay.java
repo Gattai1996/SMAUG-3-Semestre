@@ -33,6 +33,7 @@ public class Gameplay implements Screen {
     private Viewport gameViewport;
     private Texture background;
 
+
     public Gameplay(CyborgDelta game) {
         MusicPlayer threa_mstage = new MusicPlayer(GameInfo.musicStage);
 

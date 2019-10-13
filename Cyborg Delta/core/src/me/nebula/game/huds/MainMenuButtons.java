@@ -23,7 +23,8 @@ public class MainMenuButtons {
     private CyborgDelta game;
     private Stage stage;
     private Viewport gameViewport;
-    private ImageButton playButton, quitButton, musicButton;
+    private ImageButton playButton, quitButton;
+//    private ImageButton playButton, quitButton, musicButton;
 
     public MainMenuButtons(CyborgDelta game) {
         this.game = game;
@@ -34,20 +35,20 @@ public class MainMenuButtons {
         createAndPositionButtons();
         stage.addActor(playButton);
         stage.addActor(quitButton);
-        stage.addActor(musicButton);
+//        stage.addActor(musicButton);
         addAllListenners();
     }
 
     private void createAndPositionButtons() {
         playButton = new ImageButton(new SpriteDrawable(new Sprite(
-                new Texture("Buttons/play.png"))));
+                new Texture("Buttons/play2.png"))));
         quitButton = new ImageButton(new SpriteDrawable(new Sprite(
-                new Texture("Buttons/quit.png"))));
-        musicButton = new ImageButton(new SpriteDrawable(new Sprite(
-                new Texture("Buttons/music.png"))));
-        playButton.setPosition(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f + 100, Align.center);
-        quitButton.setPosition(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f - 100, Align.center);
-        musicButton.setPosition(GameInfo.WIDTH - 300, 10);
+                new Texture("Buttons/quit2.png"))));
+//        musicButton = new ImageButton(new SpriteDrawable(new Sprite(
+//                new Texture("Buttons/music.png"))));
+        playButton.setPosition(GameInfo.WIDTH / 5f, GameInfo.HEIGHT / 3f + 100, Align.center);
+        quitButton.setPosition(GameInfo.WIDTH / 5f, GameInfo.HEIGHT / 3f - 100, Align.center);
+//        musicButton.setPosition(GameInfo.WIDTH - 300, 10);
     } // Fim createAndPositionButtons
 
     private void addAllListenners() {
@@ -55,22 +56,24 @@ public class MainMenuButtons {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 System.out.println("Botão Jogar clicado");
-                Menu.threa_m1.interrupt();
+//                Menu.threa_m1.interrupt();
                 game.setScreen(new Gameplay(game));
+
             }
         });
         quitButton.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 System.out.println("Botão Sair clicado");
+                Gdx.app.exit();
             }
         });
-        musicButton.addListener(new ChangeListener() {
-            @Override
-            public void changed(ChangeEvent event, Actor actor) {
-                System.out.println("Botão Música clicado");
-            }
-        });
+//        musicButton.addListener(new ChangeListener() {
+//            @Override
+//            public void changed(ChangeEvent event, Actor actor) {
+//                System.out.println("Botão Música clicado");
+//            }
+//        });
     }
 
     public Stage getStage() {

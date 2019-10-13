@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
 import me.nebula.game.helpers.GameInfo;
+import me.nebula.game.screens.LoadScreen;
 import me.nebula.game.screens.Menu;
 
 
@@ -24,7 +25,7 @@ public class CyborgDelta extends Game {
 		// Tudo que é desenhado na tela usa o batch. NUNCA criar outro SriteBatch em outra classe, pois acaba com a performace do jogo
 		System.out.println("Jogo iniciado com sucesso");
 		// A tela inicial é o menu
-		setScreen(new Menu(this));
+		setScreen(new LoadScreen(this));
 	} // Fim create
 	
 	@Override

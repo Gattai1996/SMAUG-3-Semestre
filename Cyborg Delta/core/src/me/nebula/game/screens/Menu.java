@@ -3,8 +3,10 @@ package me.nebula.game.screens;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -17,7 +19,7 @@ import me.nebula.game.tools.MusicPlayer;
 
 
 public class Menu extends Game implements Screen {
-	
+
 	private static final int EXIT_BUTTON_WIDTH = 154;
 	private static final int EXIT_BUTTON_HEIGHT = 54;
 	private static final int CONFIG_BUTTON_WIDTH = 154;
@@ -25,31 +27,31 @@ public class Menu extends Game implements Screen {
 	private static final int PLAY_BUTTON_WIDTH = 154;
 	private static final int PLAY_BUTTON_HEIGHT = 54;
 	public static int start = 0;
-	public static boolean music_conf = true;
 	public String music_file;
 
 	private MainMenuButtons buttons;
-	
+
 	private CyborgDelta game;
-	
-	final Menu mainMenuPrincipal = this;
-	
-//	Texture playButton;
+
+//	final Menu mainMenuPrincipal = this;
+
+	//	Texture playButton;
 //	Texture playButtonAnimated;
 //	Texture exitButtonActive;
 //	Texture exitButtonInactive;
 //	Texture configButtonActive;
 //	Texture configButtonInactive;
-	Texture backGround;
-	public static MusicPlayer threa_m1;
-	
+	private Texture backGround;
+	private MusicPlayer threa_m1;
+
 	public Menu (CyborgDelta game) {
 		this.game = game;
+
 //		playButton = new Texture("./Buttons/play.png");
 //		playButtonAnimated = new Texture("./Buttons/play.png");
 //		exitButtonActive = new Texture("./Buttons/quit.png");
 //		configButtonActive = new Texture("./Buttons/config.png");
-		backGround = new Texture("./backgrounds/Technology7.jpg");
+		backGround = new Texture("./backgrounds/backGroundMenu.png");
 
 		buttons = new MainMenuButtons(game);
 		threa_m1 = new MusicPlayer(GameInfo.musicMenu);
@@ -60,17 +62,17 @@ public class Menu extends Game implements Screen {
 		//if ( start == 1 | music_conf == false) {
 		//	threa_m1.interrupt();
 		//}
-		
+
 	}
-	
+
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub
-		
+
 	}
 	@Override
 	public void render(float delta) {
-		
+
 //		if (Gdx.input.getX() < 550 + EXIT_BUTTON_WIDTH  && Gdx.input.getX() > 550 && Gdx.input.getY() < 475 + EXIT_BUTTON_HEIGHT && Gdx.input.getY() > 475) {
 //			if (Gdx.input.isTouched()) {
 //				System.out.println("Tocando EXIT!");
@@ -102,8 +104,8 @@ public class Menu extends Game implements Screen {
 //		}
 
 
-//		Gdx.gl.glClearColor(1, 0, 0, 1);
-//		Gdx.gl.glClear(GL30.GL_COLOR_BUFFER_BIT);
+		Gdx.gl.glClearColor(0, 0, 0, 1);
+		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 //		game.batch.begin();
 //		game.batch.draw(backGround, 0, 0);
 //		game.batch.draw(playButton, 150, 50, PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
@@ -111,9 +113,11 @@ public class Menu extends Game implements Screen {
 //		game.batch.draw(exitButtonActive, 550, 50, EXIT_BUTTON_WIDTH, EXIT_BUTTON_HEIGHT);
 //		//game.batch.draw(region, x, y, originX, originY, width, height, scaleX, scaleY, rotation);
 //		game.batch.end();
+		game.getBatch().begin();
+		game.getBatch().draw(backGround, 0, 0);
+		game.getBatch().end();
 		game.getBatch().setProjectionMatrix(buttons.getStage().getCamera().combined);
 		buttons.getStage().draw();
-		
 
 
 	}
@@ -121,7 +125,7 @@ public class Menu extends Game implements Screen {
 	@Override
 	public void resize(int width, int height) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -133,7 +137,7 @@ public class Menu extends Game implements Screen {
 	@Override
 	public void resume() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -152,8 +156,8 @@ public class Menu extends Game implements Screen {
 	@Override
 	public void create() {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
+
 
 }
