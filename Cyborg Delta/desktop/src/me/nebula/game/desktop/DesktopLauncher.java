@@ -2,8 +2,9 @@ package me.nebula.game.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import me.nebula.game.CyborgDelta;
 import me.nebula.game.helpers.GameInfo;
-import me.nebula.game.main.GameMain;
+//import me.nebula.game.main.GameMain;
 
 public class DesktopLauncher {
 
@@ -15,8 +16,9 @@ public class DesktopLauncher {
 		config.width = GameInfo.WIDTH;
 		config.height = GameInfo.HEIGHT;
 		config.resizable = false;
+		//Modo Tela Cheia Padrão true
 		config.fullscreen = true;
-		new LwjglApplication(new GameMain(), config);
+		new LwjglApplication(new CyborgDelta(), config);
 	}
 
 }

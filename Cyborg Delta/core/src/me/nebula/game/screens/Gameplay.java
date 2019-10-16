@@ -12,14 +12,16 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
+import me.nebula.game.CyborgDelta;
 import me.nebula.game.ground.Ground;
-import me.nebula.game.main.GameMain;
+//import me.nebula.game.main.GameMain;
 import me.nebula.game.player.Player;
 import me.nebula.game.helpers.GameInfo;
+import me.nebula.game.tools.MusicPlayer;
 
 public class Gameplay implements Screen {
 
-    private GameMain game;
+    private CyborgDelta game;
 
     private OrthographicCamera mainCamera;
     private OrthographicCamera box2DCamera;
@@ -31,8 +33,14 @@ public class Gameplay implements Screen {
     private Viewport gameViewport;
     private Texture background;
 
-    public Gameplay(GameMain game) {
+
+    public Gameplay(CyborgDelta game) {
+        MusicPlayer threa_mstage = new MusicPlayer(GameInfo.musicStage);
+
+        threa_mstage.start();
+        System.out.println("Thread inicada");
         System.out.println("Gameplay iniciado");
+
         this.game = game;
 
         background = new Texture("Mapas/Menu.png");
