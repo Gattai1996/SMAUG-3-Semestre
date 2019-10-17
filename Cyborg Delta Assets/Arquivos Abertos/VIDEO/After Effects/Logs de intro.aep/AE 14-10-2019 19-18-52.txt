@@ -1,0 +1,17 @@
+Log de renderização do Adobe After Effects v16.1 Windows 64 para o projeto“intro.aep”
+
+Renderização iniciada em 14/10/2019 às 19:18:52
+
+  14/10/2019 19:18:52: iniciando composição “Intro”.
+
+  Saída para: C:\Users\matei\Videos\Intro.avi    14/10/2019 19:19:32: composição concluída “Intro”.
+
+
+  14/10/2019 19:19:34: iniciando composição “Intro”.
+
+  Saída para: C:\Users\matei\Videos\Intro_1.avi      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.      Renderização interrompida pelo usuário.  Erro do After Effects: Um módulo de saída parou de responder. O arquivo pode estar corrompido ou danificado. Talvez seja necessário reiniciar o After Effects.  14/10/2019 19:20:19: composição concluída “Intro”.
+
+
+  Tempo total decorrido: 1 min, 6 s
+Log fechado em 14/10/2019 às 19:20:19
+
