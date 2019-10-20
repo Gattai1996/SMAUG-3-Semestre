@@ -10,6 +10,8 @@ public class Player extends Sprite {
 
     private World world;
     private Body body;
+    private boolean jumping;
+    public String facing = "right";
 
     public Player(World world, float x, float y) {
         super(new Texture("Idle.png"));
@@ -17,6 +19,9 @@ public class Player extends Sprite {
         setPosition(x, y);
         createBody();
     } // Fim construtor
+
+    public Player(Sprite sprite) {
+    }
 
     private void createBody() {
 
@@ -26,7 +31,7 @@ public class Player extends Sprite {
         body = world.createBody(bodyDef);
         body.setFixedRotation(true);
         PolygonShape shape = new PolygonShape();
-        shape.setAsBox((getWidth() / 4f) / GameInfo.PPM,
+        shape.setAsBox((getWidth() / 8f) / GameInfo.PPM,
                 (getHeight() / 4f) / GameInfo.PPM);
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.density = 4f;
@@ -47,7 +52,9 @@ public class Player extends Sprite {
     }
 
     public void jumpPlayer(float y) {
-        body.setLinearVelocity(body.getLinearVelocity().x, y);
+        if(!jumping) {
+            body.setLinearVelocity(body.getLinearVelocity().x, y);
+        }
     }
 
     public void drawPlayer(SpriteBatch batch) {
@@ -56,6 +63,20 @@ public class Player extends Sprite {
     }
 
     public void updatePlayer() {
+        if(body.getLinearVelocity().x < 0f && !this.isFlipX()) {
+            facing = "left";
+            this.flip(true, false);
+        } else if (body.getLinearVelocity().x > 0f && this.isFlipX()) {
+            facing = "right";
+            this.flip(true, false);
+        }
+        // Checa a velocidade y para determinar se está pulando
+        if(body.getLinearVelocity().y != 0) {
+            jumping = true;
+        } else {
+            jumping = false;
+        }
+        // Ajusta a posição do corpo e o sprite
         setPosition(body.getPosition().x * GameInfo.PPM - 580, body.getPosition().y * GameInfo.PPM - 310);
     }
 

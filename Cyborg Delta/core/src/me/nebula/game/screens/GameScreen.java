@@ -9,16 +9,15 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import me.nebula.game.chars.Player;
+import me.nebula.game.player.Player;
 
-public class GameScreen extends Game implements Screen,InputProcessor {
+public class GameScreen extends Game implements Screen, InputProcessor {
 
     private Player player;
     private TiledMap map;
     private OrthogonalTiledMapRenderer renderer;
     private OrthographicCamera camera;
-    //private Player player;
-	    
+
     @Override
     public void create () {
 
