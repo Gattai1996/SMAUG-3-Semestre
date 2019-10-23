@@ -43,11 +43,10 @@ public class Gameplay implements Screen {
         bulletsList = new ArrayList<Bullet>();
         bulletsToRemove = new ArrayList<Bullet>();
 
-        MusicPlayer threa_mstage = new MusicPlayer(GameInfo.musicStage);
+        GameInfo.musicPlay = GameInfo.musicStage;
+        Menu.threa_m1.playMusic();
 
-        threa_mstage.start();
-        System.out.println("Thread inicada");
-        System.out.println("Gameplay iniciado");
+
 
         this.game = game;
 

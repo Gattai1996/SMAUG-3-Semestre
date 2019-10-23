@@ -9,15 +9,14 @@ import me.nebula.game.helpers.GameInfo;
 //import me.nebula.game.screens.MainMenu;
 
 
-public class MusicPlayer extends Thread {
+public class MusicPlayer extends Thread implements Runnable {
 	private Music music;
 	private boolean music_mode;
-	private String musicFile;
 	private boolean delay;
 
 
-	public MusicPlayer(String s) {
-		musicFile = s;
+	public MusicPlayer() {
+
 
 		music_mode = GameInfo.music_conf;
 
@@ -27,13 +26,7 @@ public class MusicPlayer extends Thread {
 	    //carrega musica conforme a fase
 
        boolean music_state = true;
-    if (music_mode) {
-        music = Gdx.audio.newMusic(Gdx.files.internal(musicFile));
-        music.setLooping(true);
-        music.setVolume(0.9f);
-        music.play();
-        System.out.println("Tocando musica "+musicFile);
-    }
+
 
 
 		while (true) {
@@ -52,8 +45,16 @@ public class MusicPlayer extends Thread {
 
 		//sound.dispose();
 	}
+
 	public void playMusic() {
-		music.play();
+
+		if (music_mode) {
+			music = Gdx.audio.newMusic(Gdx.files.internal(GameInfo.musicPlay));
+			music.setLooping(true);
+			music.setVolume(0.7f);
+			music.play();
+			System.out.println("Tocando musica "+GameInfo.musicPlay);
+		}
 	}
 	public void pauseMusic() {
 		music.pause();
@@ -64,7 +65,11 @@ public class MusicPlayer extends Thread {
 
 	
 	public void dispose () {
+
 		music.dispose();
+	}
+	public void stopThread(){
+		this.music_mode = false;
 	}
 	
 }

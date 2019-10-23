@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="64" infinite="0" nextlayerid="7" nextobjectid="10">
+ <tileset firstgid="1" name="Tile (15)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (15).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="Acid (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Acid (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="Acid (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Acid (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="BGTile (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="BGTile (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="BGTile (3)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (3).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="BGTile (4)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (4).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="BGTile (5)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (5).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" name="BGTile (6)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (6).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="10" name="BGTile (7)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/BGTile (7).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="11" name="Fence (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Fence (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="12" name="Fence (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Fence (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="13" name="Fence (3)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Fence (3).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="14" name="Spike" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Spike.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="15" name="Tile (1)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (1).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="16" name="Tile (2)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (2).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="17" name="Tile (3)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (3).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="18" name="Tile (4)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (4).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="19" name="Tile (5)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (5).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="20" name="Tile (6)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (6).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="Tile (7)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (7).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="22" name="Tile (8)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (8).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="23" name="Tile (9)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (9).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="24" name="Tile (10)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (10).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="25" name="Tile (11)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (11).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="26" name="Tile (12)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (12).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="27" name="Tile (13)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (13).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="28" name="Tile (14)" tilewidth="256" tileheight="256" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="256" height="256" source="../freescifiplatform/png/Tiles/Tile (14).png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="29" name="backgroundTiled" tilewidth="6400" tileheight="6400" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="6400" height="6400" source="../backgrounds/backgroundTiled.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="background" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAMAiCLrH/N3SbwgQQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs3TpAecmQAB4=
+  </data>
+ </layer>
+ <layer id="2" name="graphics" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1rEJACEQRUGxAk3V/us030REwTuYyR7s5j8lAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIGqhx+Z93/wHAOCu1T6z1wCArymPu4bOh/13EziwAY0=
+  </data>
+ </layer>
+ <objectgroup id="6" name="acid">
+  <object id="4" x="2304" y="6208" width="1024" height="192"/>
+ </objectgroup>
+ <objectgroup id="4" name="ground" visible="0">
+  <object id="5" x="768" y="5376" width="512" height="128"/>
+  <object id="6" x="1536" y="5376" width="768" height="128"/>
+  <object id="7" x="2560" y="5760" width="1024" height="128"/>
+  <object id="9" x="0" y="6144" width="2304" height="256"/>
+ </objectgroup>
+ <objectgroup id="5" name="object"/>
+</map>

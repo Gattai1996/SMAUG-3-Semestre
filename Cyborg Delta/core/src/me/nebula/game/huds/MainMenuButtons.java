@@ -56,7 +56,7 @@ public class MainMenuButtons {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 System.out.println("Botão Jogar clicado");
-//                Menu.threa_m1.interrupt();
+                Menu.threa_m1.dispose();
                 game.setScreen(new Gameplay(game));
 
             }
