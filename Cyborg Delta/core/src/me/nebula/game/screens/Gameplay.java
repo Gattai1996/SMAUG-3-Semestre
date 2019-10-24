@@ -14,6 +14,7 @@ import me.nebula.game.CyborgDelta;
 import me.nebula.game.bullets.Bullet;
 import me.nebula.game.ground.Ground;
 //import me.nebula.game.main.GameMain;
+import me.nebula.game.huds.Hud;
 import me.nebula.game.player.Player;
 import me.nebula.game.helpers.GameInfo;
 import me.nebula.game.tools.MusicPlayer;
@@ -36,17 +37,20 @@ public class Gameplay implements Screen {
 
     private ArrayList<Bullet> bulletsList;
     private ArrayList<Bullet> bulletsToRemove;
+    private Hud hud;
 
 
     public Gameplay(CyborgDelta game) {
 
         bulletsList = new ArrayList<Bullet>();
         bulletsToRemove = new ArrayList<Bullet>();
+        hud = new Hud(game.getBatch());
 
-        GameInfo.musicPlay = GameInfo.musicStage;
-        Menu.threa_m1.playMusic();
+        MusicPlayer threa_mstage = new MusicPlayer(GameInfo.musicStage);
 
-
+        threa_mstage.start();
+        System.out.println("Thread inicada");
+        System.out.println("Gameplay iniciado");
 
         this.game = game;
 
@@ -129,6 +133,9 @@ public class Gameplay implements Screen {
         // Limpa a tela antes de desenhar os sprites
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        //Desenha o HUD das fases
+        game.getBatch().setProjectionMatrix(hud.stage.getCamera().combined);
+        hud.stage.draw();
 
         game.getBatch().begin();
         game.getBatch().draw(background, 0 - GameInfo.PPM / 2f - background.getWidth() / 2f + 50,

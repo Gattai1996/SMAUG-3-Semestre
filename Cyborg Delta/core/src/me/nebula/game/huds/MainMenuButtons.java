@@ -15,6 +15,7 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 import me.nebula.game.CyborgDelta;
 //import me.nebula.game.main.GameMain;
 import me.nebula.game.helpers.GameInfo;
+import me.nebula.game.screens.GamePlay2;
 import me.nebula.game.screens.Gameplay;
 import me.nebula.game.screens.Menu;
 
@@ -57,8 +58,8 @@ public class MainMenuButtons {
             public void changed(ChangeEvent event, Actor actor) {
                 System.out.println("Botão Jogar clicado");
                 Menu.threa_m1.dispose();
-                game.setScreen(new Gameplay(game));
-
+//                game.setScreen(new Gameplay(game));
+                game.setScreen(new GamePlay2(game));
             }
         });
         quitButton.addListener(new ChangeListener() {
