@@ -65,7 +65,7 @@ public class GamePlay2 implements Screen {
         gameViewport = new FitViewport(GameInfo.WIDTH / GameInfo.PPM, GameInfo.HEIGHT / GameInfo.PPM, mainCamera);
         mainCamera.position.set(gameViewport.getWorldWidth() / 2, gameViewport.getWorldHeight() / 2, 0);
         GameInfo.musicPlay = GameInfo.musicStage;
-        Menu.threa_m1.playMusic();
+//        Menu.threa_m1.playMusic();
 
 
 

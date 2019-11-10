@@ -11,40 +11,61 @@ import me.nebula.game.helpers.GameInfo;
 
 public class MusicPlayer extends Thread {
 	private Music music;
-	private boolean music_mode;
-	private String musicFile;
 	private boolean delay;
+	private boolean musicState = false;
+	public boolean thisDead = false;
 
 
-	public MusicPlayer(String s) {
-		musicFile = s;
+	public MusicPlayer() {
 
-		music_mode = GameInfo.music_conf;
 
 	}
 	
 	public void run () {
 	    //carrega musica conforme a fase
 
-       boolean music_state = true;
-    if (music_mode) {
-        music = Gdx.audio.newMusic(Gdx.files.internal(musicFile));
-        music.setLooping(true);
-        music.setVolume(0.9f);
-        music.play();
-        System.out.println("Tocando musica "+musicFile);
-    }
 
+		while (GameInfo.music_conf) {
+			if(!GameInfo.isRunning && GameInfo.musicSelect == "Menu"){
 
-		while (true) {
-			if (Gdx.input.isKeyPressed(Input.Keys.P) && !delay) {
-				if (music_state) {
-					music.pause();
-					music_state = false;
-				} else {
-					music.play();
-					music_state = true;
-				}
+				music = Gdx.audio.newMusic(Gdx.files.internal(GameInfo.musicMenu));
+				music.setLooping(true);
+				music.setVolume(0.7f);
+				music.play();
+				GameInfo.isRunning = true;
+				System.out.println("Tocando musica do Menu");
+			}
+			if(!GameInfo.isRunning && GameInfo.musicSelect == "Stage"){
+
+				music = Gdx.audio.newMusic(Gdx.files.internal(GameInfo.musicStage));
+				music.setLooping(true);
+				music.setVolume(0.7f);
+				music.play();
+				GameInfo.isRunning = true;
+				System.out.println("Tocando musica da Fase");
+			}
+			if(!GameInfo.isRunning && GameInfo.musicSelect == "Boss"){
+
+				music = Gdx.audio.newMusic(Gdx.files.internal(GameInfo.musicBoss));
+				music.setLooping(true);
+				music.setVolume(0.7f);
+				music.play();
+				GameInfo.isRunning = true;
+				System.out.println("Tocando musica da Fase");
+			}
+
+			if (!GameInfo.pauseMusic) {
+				System.out.println("Pause");
+				music.pause();
+				musicState = false;
+			} else {
+				music.play();
+				musicState = true;
+			}
+
+			if (thisDead){
+				music.dispose();
+				thisDead = false;
 			}
 
 

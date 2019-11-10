@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
+import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
@@ -46,39 +47,50 @@ public class Gameplay implements Screen {
         bulletsToRemove = new ArrayList<Bullet>();
         hud = new Hud(game.getBatch());
 
-        MusicPlayer threa_mstage = new MusicPlayer(GameInfo.musicStage);
+        world = new World(new Vector2(0, - 9.8f), true);
+        Ground ground = new Ground(world);
+        ground.setSpritePosition(0, 0);
 
-        threa_mstage.start();
-        System.out.println("Thread inicada");
-        System.out.println("Gameplay iniciado");
 
         this.game = game;
 
         background = new Texture("Mapas/Menu.png");
 
-        mainCamera = new OrthographicCamera(GameInfo.WIDTH, GameInfo.HEIGHT);
+        mainCamera = new OrthographicCamera(GameInfo.WIDTH , GameInfo.HEIGHT);
         mainCamera.position.set(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f, 0);
 
         gameViewport = new StretchViewport(GameInfo.WIDTH, GameInfo.HEIGHT,
                 mainCamera);
 
-        box2DCamera = new OrthographicCamera();
-        box2DCamera.setToOrtho(false, GameInfo.WIDTH / GameInfo.PPM,
-                GameInfo.HEIGHT / GameInfo.PPM);
-        box2DCamera.position.set(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f, 0);
+//        box2DCamera = new OrthographicCamera();
+//        box2DCamera.setToOrtho(false, GameInfo.WIDTH / GameInfo.PPM,
+//                GameInfo.HEIGHT / GameInfo.PPM);
+//        box2DCamera.position.set(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f, 0);
 
-        debugRenderer = new Box2DDebugRenderer();
+//        debugRenderer = new Box2DDebugRenderer();
 
-        world = new World(new Vector2(0, - 9.8f), true);
+
+
+
+        player = new Player(world, GameInfo.WIDTH / 2f, 1000);
 //        player = player.positionThePlayer(player);
 //        world.setContactListener((ContactListener) this);
 
-        player = new Player(world, GameInfo.WIDTH / 2f, 1000);
-        Ground ground = new Ground(world);
-        ground.setSpritePosition(0, 0);
+
     } // Fim construtor
 
     private void handleInput(float deltaTime) {
+        // Pausar música
+
+        if (Gdx.input.isKeyJustPressed(Input.Keys.P)) {
+            System.out.println(GameInfo.pauseMusic);
+            if (!GameInfo.pauseMusic) {
+                GameInfo.pauseMusic = true;
+
+            } else {
+                GameInfo.pauseMusic = false;
+            }
+        }
         // Atirar
         if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT) | Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
             if(player.facing == "right") {
@@ -114,7 +126,13 @@ public class Gameplay implements Screen {
         }
         // Remove todas as bullets que estão na lista para serem removidas
         bulletsList.removeAll(bulletsToRemove);
+        //Segue Personagem Camera
+        moveCamera();
     } // Fim update
+
+    private void moveCamera() {
+        mainCamera.position.y -= 1;
+    }
 
     public void create () {
 
@@ -134,8 +152,8 @@ public class Gameplay implements Screen {
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         //Desenha o HUD das fases
-        game.getBatch().setProjectionMatrix(hud.stage.getCamera().combined);
-        hud.stage.draw();
+//        game.getBatch().setProjectionMatrix(hud.stage.getCamera().combined);
+//        hud.stage.draw();
 
         game.getBatch().begin();
         game.getBatch().draw(background, 0 - GameInfo.PPM / 2f - background.getWidth() / 2f + 50,
@@ -147,7 +165,7 @@ public class Gameplay implements Screen {
         }
         game.getBatch().end();
 
-        debugRenderer.render(world, box2DCamera.combined);
+//        debugRenderer.render(world, box2DCamera.combined);
         game.getBatch().setProjectionMatrix(mainCamera.combined);
 
         player.updatePlayer();

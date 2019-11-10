@@ -27,6 +27,7 @@ public class Menu extends Game implements Screen {
 	private static final int PLAY_BUTTON_WIDTH = 154;
 	private static final int PLAY_BUTTON_HEIGHT = 54;
 	public static int start = 0;
+	public static MusicPlayer threa_m1;
 	public String music_file;
 
 	private MainMenuButtons buttons;
@@ -42,7 +43,7 @@ public class Menu extends Game implements Screen {
 //	Texture configButtonActive;
 //	Texture configButtonInactive;
 	private Texture backGround;
-	private MusicPlayer threa_m1;
+//	private MusicPlayer threa_m1;
 
 	public Menu (CyborgDelta game) {
 		this.game = game;
@@ -54,7 +55,8 @@ public class Menu extends Game implements Screen {
 		backGround = new Texture("./backgrounds/backGroundMenu.png");
 
 		buttons = new MainMenuButtons(game);
-		threa_m1 = new MusicPlayer(GameInfo.musicMenu);
+		GameInfo.musicSelect = "Menu";
+		threa_m1 = new MusicPlayer();
 
 		threa_m1.start();
 		System.out.println("Thread inicada");

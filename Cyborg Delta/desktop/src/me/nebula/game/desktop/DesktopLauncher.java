@@ -17,7 +17,7 @@ public class DesktopLauncher {
 		config.height = GameInfo.HEIGHT;
 		config.resizable = false;
 		//Modo Tela Cheia Padrão true
-		config.fullscreen = true;
+		config.fullscreen = false;
 		new LwjglApplication(new CyborgDelta(), config);
 	}
 
